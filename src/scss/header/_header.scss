@@ -15,6 +15,11 @@
 
     &__logo {
         width: 30rem;
+        margin-bottom: 5rem;
+    
+        @include mixins.desktop {
+            margin-bottom: 0;
+        }
     }
 
 }

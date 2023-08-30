@@ -3,10 +3,22 @@
 
 .navigation {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+    @include mixins.desktop {
+        flex-direction: row;
+        width: auto;
+    }
+
 
     &__link {
         font-size: 2rem;
         font-weight: 700;
+        color: vars.$color_black;
 
         &--register {
             @include mixins.button(vars.$color_primary, vars.$color_white);
