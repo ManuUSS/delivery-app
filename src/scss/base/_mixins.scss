@@ -1,8 +1,8 @@
 @use 'variables' as v; 
 
 /** Media Queries **/
-@mixin telefono {
-    @media (min-width: v.$telefono) {
+@mixin phone {
+    @media (min-width: v.$phone) {
         @content;
     }
 }
@@ -20,7 +20,7 @@
 }
 
 
-@mixin boton($color, $texto) {
+@mixin button($color, $text) {
     background-color: $color;
     font-size: 2rem;
     padding: 1.2rem 3rem;
@@ -29,7 +29,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    color: $texto;
+    color: $text;
     text-decoration: none;
     transition: background-color .3s ease;
     border: none;
@@ -44,8 +44,8 @@
     }
 }
 
-@mixin grid($columnas, $espaciado ) {
+@mixin grid($columns, $spacing ) {
     display: grid;
-    gap: $espaciado;
-    grid-template-columns: repeat($columnas, 1fr);
+    gap: $spacing;
+    grid-template-columns: repeat($columns, 1fr);
 }
