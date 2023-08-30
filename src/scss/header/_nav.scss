@@ -1,0 +1,17 @@
+@use 'base/vars';
+@use 'base/mixins';
+
+.navigation {
+
+
+    &__link {
+        font-size: 2rem;
+        font-weight: 700;
+
+        &--register {
+            @include mixins.button(vars.$color_primary, vars.$color_white);
+        }
+
+    }
+
+}
