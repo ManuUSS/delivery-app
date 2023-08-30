@@ -57,4 +57,4 @@ exports.dev = dev;
 exports.images = images;
 exports.webp_version = webp_version;
 exports.avif_version = avif_version;
-exports.default = series( imagenes, webp_version, avif_version, css, dev  );
+exports.default = series( images, webp_version, avif_version, css, dev  );
