@@ -1,0 +1,16 @@
+@use 'base/vars';
+@use 'base/mixins';
+
+.testimonials {
+    padding: vars.$spacing 0;
+}
+
+.testimonial {
+    background-color: vars.$color_secondary;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
