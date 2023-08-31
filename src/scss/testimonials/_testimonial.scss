@@ -27,4 +27,28 @@
         border-radius: 50%;
         overflow: hidden;
     }
+
+    &__author {
+        color: vars.$color_white;
+        font-weight: 700;
+        margin: .5rem 0;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 2rem 0 0 0;
+        padding-left: 2rem;
+        position: relative;
+
+        &::before {
+            content: ' " ';
+            font-size: 8rem;
+            position: absolute;
+            left: 0;
+            top: -4rem;
+            opacity: .3;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
 }
