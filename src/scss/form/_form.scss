@@ -11,6 +11,16 @@
         }
     }
 
+    &__content {
+        background-color: vars.$color_primary;
+        padding: vars.$spacing;
+    }
+    
+    &__heading {
+        color: vars.$color_white;
+        text-align: center;
+    }
+
     &__image-container {
         margin-top: vars.$spacing;
         display: flex;
