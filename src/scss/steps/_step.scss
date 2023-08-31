@@ -1,0 +1,38 @@
+@use 'base/vars';
+@use 'base/mixins';
+
+.steps {
+    margin-top: 5rem;
+
+    &__content {
+        background-color: vars.$color_primary;
+        margin-top: -1px;
+    }
+
+    &__heading {
+        text-align: center;
+        color: vars.$color_white;
+
+        &--desc {
+            font-size: 1.8rem;
+            display: block;
+        }
+    }
+
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid( 3, vars.$spacing );
+        }
+    }
+
+    &__image {
+
+        transition: transform 300ms ease-in-out;
+
+        &:hover {
+            transform: rotate(-4deg) scale(1.2);
+        }
+    }
+
+
+}
