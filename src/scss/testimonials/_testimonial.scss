@@ -7,10 +7,24 @@
 
 .testimonial {
     background-color: vars.$color_secondary;
+    border-radius: 1rem;
+    color: vars.$color_white;
     padding: 2rem;
     margin-bottom: 2rem;
 
     &:last-of-type {
         margin-bottom: 0;
+    }
+
+    &__header {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__image {
+        flex-basis: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
     }
 }
