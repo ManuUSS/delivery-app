@@ -3,6 +3,10 @@
 
 .form {
 
+    @include mixins.desktop {
+        margin-top: 5rem;
+    }
+
     &__grid {
         @include mixins.tablet {
             @include mixins.grid(2, vars.$spacing);
