@@ -3,8 +3,6 @@
 
 .form {
 
-
-
     &__grid {
         @include mixins.tablet {
             @include mixins.grid(2, vars.$spacing);
