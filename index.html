@@ -21,5 +21,40 @@
             <a href="#" class="navigation__link navigation__link--register">Registrar restaurante</a>
         </nav>
     </header>
+
+    <section class="form container">
+        <div class="form__grid">
+            <div class="form__content">
+                <h2>Encuentra y pide comida de tu restaurante favorito</h2>
+                <form class="form__search">
+                    <div class="form__field">
+                        <label for="restaurant" class="form__label">Restaurante</label>
+                        <input 
+                            type="text" 
+                            name="restaurant" 
+                            id="restaurant" 
+                            placeholder="Tacos Moncho" 
+                            class="form__input"
+                        >
+                    </div>
+                    <div class="form__field">
+                        <label for="dish" class="form__label">Platillo</label>
+                        <input 
+                            type="text" 
+                            name="dish" 
+                            id="dish" 
+                            placeholder="Pizzas, ensaladas, comida típica" 
+                            class="form__input"
+                        >
+                    </div>
+                    <input type="submit" value="Buscar" class="form__submit">
+                </form>
+            </div>
+            <div class="form__image">
+                <img src="build/img/dibujo_repartidor.svg" alt="reparter">
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
