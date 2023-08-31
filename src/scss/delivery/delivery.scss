@@ -1,0 +1,32 @@
+@use 'base/vars';
+@use 'base/mixins';
+
+.food-delivery {
+    padding: vars.$spacing 0;
+    
+    &__heading {
+        text-align: center;
+        color: vars.$color_secondary;
+    }
+    
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid( 2, vars.$spacing );
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    &__text {
+        color: vars.$color_secondary;
+        line-height: 1.5;
+    }
+    
+    &__link {
+        @include mixins.button( vars.$color_primary, vars.$color_white );
+    }
+}
