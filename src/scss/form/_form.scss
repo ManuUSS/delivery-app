@@ -1,2 +1,26 @@
 @use 'base/vars';
 @use 'base/mixins';
+
+.form {
+
+
+
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid(2, vars.$spacing);
+        }
+    }
+
+    &__image-container {
+        margin-top: vars.$spacing;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 30rem;
+        @include mixins.desktop {
+            width: 100%;
+        }
+    }
+}
