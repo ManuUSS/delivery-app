@@ -9,4 +9,10 @@
         text-align: center;
         color: vars.$color_secondary;
     }
+
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid( 2, 4rem );
+        }
+    }
 }
