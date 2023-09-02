@@ -1,2 +1,24 @@
 @use 'base/vars';
 @use 'base/mixins';
+
+
+.download {
+    background-color: vars.$color_grey;
+    padding: vars.$spacing 0;
+
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid( 2, vars.$spacing );
+        }
+    }
+    
+    &__image {
+        width: 50%;
+        margin: 0 auto;
+        transition: transform .5s ease-in-out;
+
+        &:hover {
+            transform: rotate(4deg) scale(1.2);
+        }
+    }
+}
